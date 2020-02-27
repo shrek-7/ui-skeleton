@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Skeleton</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body onload="onDomLoaded()">
+
+  <div class="container">
+    <section id='section-left' class='section-left' onload="onSidePanalLoaded()">
+      <ul id='menu-content' class='menu-content'></ul>
+      <div onclick="onHamburgerClick()" class='hambuger-menu-close mobile'>close</div>
+    </section>
+    <section class='section-right'>
+      <header class='header-wrap'>
+        <div onclick="onHamburgerClick()" class='hambuger-menu-button'>Menu</div>
+        <ul>
+          <li class="header-list">
+            <span>Text</span>
+            <div class="header-list-content">
+              <ul>
+                <li>content</li>
+                <li>content</li>
+                <li>content</li>
+              </ul>
+              
+            </div>
+          </li>
+          <li class="header-list">
+            <span>Text</span>
+            <div class="header-list-content">
+            <p>Hello World!</p>
+            </div>
+          </li>
+        </ul>
+      </header>
+      <main id='main-wrapper' class='main-wrapper'>
+        <section class="main-inner-container">
+          <div id=main-content></div>
+          <div id='main-modal' class='main-modal'>
+              <div class='modal-content'>
+                <p>
+                  hello World!
+                </p>
+              </div>
+            <div class='modal-close' onclick="onModalClose()">Close</div>
+          </div>
+          <div class="modal-button" onclick="onModalButtonClick()">+</div>
+        </section>
+      </main>
+      <footer class='footer-wrap'>
+        <p>Walmart copyright.</p>
+      </footer>
+    </section>
+  </div>
+
+  <script defer src='./content.js'></script>
+  <script defer src='./index.js'></script>
+</body>
+</html>
